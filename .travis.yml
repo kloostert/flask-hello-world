@@ -1,0 +1,16 @@
+language: python
+python:
+  - '3.6'
+
+cache:
+  pip: true
+
+install: 'python setup.py develop'
+
+script:
+  - 'python -m flask_monitoringdashboard.collect_performance --test_folder ./tests --times 1 --url http://143.176.113.105/dashboard'
+  - 'pwd'
+  - 'ls -la'
+  - 'cd ~'
+  - 'pwd'
+  - 'ls -la'
