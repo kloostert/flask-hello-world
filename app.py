@@ -1,10 +1,10 @@
 import time
-# import flask_monitoringdashboard as dashboard
+import flask_monitoringdashboard as dashboard
 
 from flask import Flask
 
 app = Flask(__name__)
-# dashboard.bind(app)
+dashboard.bind(app)
 
 
 @app.route('/')
