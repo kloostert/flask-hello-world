@@ -8,7 +8,7 @@ cache:
 install: 'python setup.py develop'
 
 script:
-  - 'python -m flask_monitoringdashboard.collect_performance --test_folder ./tests --times 1 --url http://143.176.113.105/dashboard'
+  - 'python -m flask_monitoringdashboard.collect_performance --test_folder ./tests --times 2 --url http://143.176.113.105/dashboard'
   - 'pwd'
   - 'ls -la'
   - 'cd ~'
