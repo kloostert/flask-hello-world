@@ -4,6 +4,7 @@ import flask_monitoringdashboard as dashboard
 from flask import Flask
 
 app = Flask(__name__)
+dashboard.config.version = 1.5
 dashboard.bind(app)
 
 
