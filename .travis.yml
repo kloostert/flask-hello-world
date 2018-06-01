@@ -14,4 +14,3 @@ script:
   - 'cd ~'
   - 'pwd'
   - 'ls -la'
-
